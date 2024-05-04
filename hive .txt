@@ -1,0 +1,40 @@
+hive 
+•Create database mydbe;
+ use mydb;
+ • create table flight (fno int, year int dest varchar(10), delay float);
+ • alter table flight rename to air-flight;
+ • alter table air-fright add columns (source Varchar(10));
+ drop table flight;
+ • desc air-flight; 
+create new text file.
+ • create table flight (fno int, Year int, dest varchar (10), delay float)
+ > row format delimited. 
+> fields terminated by"," 
+> lines terminated by '\n'
+ > stored as text file;
+ • insert into flight values (123 2009 "mumbai" 30.6); 
+• insert into fright values. (124, 2008, pune" ", 50.6); 
+• select * from flight;
+ * open another terminal  Command - gedit f-txt and enter type record 923, 2009, mumbai, 60.0 156, 2008, pune, 30.0 112, 2010, C6oa, 32.5 322, 2005, nagpur, 45.6 Save the records & Close EED  open terminal .pwd then .ls go hive terminal
+
+
+
+load data local inpath "f.txt" 
+> overconite into table flight;
+ • select * from flight; 
+. create table inflight (fno int, year int, Source varchar (10))
+ > row format delimited 
+> fields terminated by ','
+ > lines terminated by 'n'
+ > stored as textfile;
+ select * from flight; 
+•  insert into inflight Values (923, 2009, "pune")",
+ select a.fno, a.year, a.destination, a.delay 6. Source 
+> from flight a join inflight b 
+> on (a.fno = b.fno); 
+• select * from oflight; 
+• select * from flight; 
+• create index flight_index on table flight (fno) 
+> as org.apache.hadoop. hive q1. index. compact. Compact Index Handler" 
+ WITH DEFERRED REBUID;
+ > show tables;
